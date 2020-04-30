@@ -1,0 +1,28 @@
+@import '../../index.scss';
+
+.navbar{
+    background: $mainBlack;
+    padding: 0.5rem  1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.nav-links{
+    align-self: center;
+    list-style-type: none;
+    display:grid;                               // to display as a grid 
+    grid-template-columns: repeat(3, 1fr);      // to seperate the grid into three columns take two values columna and size
+    text-align: center;
+}
+.nav-link{
+    color:$mainGrey;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size:1.2rem;
+    transition: all 0.3s linear;  //take three argu.. for all items and time na dlinear 
+    &:hover{
+        color:$mainGreen;
+    }
+}
+.active {
+    color: $mainGreen;
+}

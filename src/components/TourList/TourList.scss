@@ -1,0 +1,26 @@
+@import '../../index.scss';
+
+.tourlist {
+    width:70vw;     //70% of the screen
+    margin: 0 auto;
+    padding: 2 rem 0;
+}
+
+@media screen and (min-width: 768px){           // for screen more the 768px
+    .tourlist{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap:1.5rem  ;
+    }
+}
+@media screen and (min-width: 992px){
+    .tourlist{
+        width:85vw;
+        grid-template-columns: 1fr 1fr 1fr;     //3 colums
+    }
+}
+@media screen and (min-width: 1140px){
+    .tourlist{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
